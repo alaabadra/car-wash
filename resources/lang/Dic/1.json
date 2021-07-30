@@ -1,0 +1,520 @@
+{
+    "dic": [{
+            "dic_id": 1,
+            "name": "Finance",
+            "name_ar": "المالية"
+        },
+        {
+            "dic_id": 2,
+            "name": "Home",
+            "name_ar": "الرئيسية"
+        },
+        {
+            "dic_id": 3,
+            "name": "Contact",
+            "name_ar": "التواصل"
+        },
+        {
+            "dic_id": 4,
+            "name": "English",
+            "name_ar": "اللغة الانجليزية"
+        },
+        {
+            "dic_id": 5,
+            "name": "Arabic",
+            "name_ar": "اللغة العربية"
+        },
+        {
+            "dic_id": 6,
+            "name": "Car Wash",
+            "name_ar": "مغسلة السيارات"
+        },
+        {
+            "dic_id": 7,
+            "name": "Employees",
+            "name_ar": "الموظفين"
+        },
+        {
+            "dic_id": 8,
+            "name": "Employees Management",
+            "name_ar": "ادارة شئون الموظفين"
+        },
+        {
+            "dic_id": 9,
+            "name": "First Name",
+            "name_ar": "الاسم الاول"
+        },
+        {
+            "dic_id": 10,
+            "name": "First Name",
+            "name_ar": "الاسم الاول"
+        },
+        {
+            "dic_id": 11,
+            "name": "Sur Name",
+            "name_ar": "الاسم الثانى"
+        },
+        {
+            "dic_id": 12,
+            "name": "Last Name",
+            "name_ar": "الاسم الاخير"
+        },
+        {
+            "dic_id": 13,
+            "name": "Employee Picture",
+            "name_ar": "صورة الموظف"
+        },
+        {
+            "dic_id": 14,
+            "name": "Choose file",
+            "name_ar": "اختيار صورة"
+        },
+        {
+            "dic_id": 15,
+            "name": "Notes",
+            "name_ar": "الملاحظات"
+        },
+        {
+            "dic_id": 16,
+            "name": "Email",
+            "name_ar": "البريد الالكترونى"
+        },
+        {
+            "dic_id": 17,
+            "name": "Send credentials to employee on email",
+            "name_ar": "ارسال بيانات الاعتماد إلى الموظف عبر البريد الإلكتروني"
+        },
+        {
+            "dic_id": 18,
+            "name": "Status",
+            "name_ar": "الحالة"
+        },
+        {
+            "dic_id": 19,
+            "name": "Active",
+            "name_ar": "نشط"
+        },
+        {
+            "dic_id": 20,
+            "name": "Stopped",
+            "name_ar": "موقوف"
+        },
+        {
+            "dic_id": 21,
+            "name": "Allow access to the system",
+            "name_ar": "سماحية الدخول الى النظام"
+        },
+        {
+            "dic_id": 22,
+            "name": "Language",
+            "name_ar": "اللغة"
+        },
+        {
+            "dic_id": 23,
+            "name": "Role",
+            "name_ar": "الدور"
+        },
+        {
+            "dic_id": 24,
+            "name": "Date of Birth",
+            "name_ar": "تاريخ الميلاد"
+        },
+        {
+            "dic_id": 25,
+            "name": "Gender",
+            "name_ar": "النوع"
+        },
+        {
+            "dic_id": 26,
+            "name": "Male",
+            "name_ar": "ذكر"
+        },
+        {
+            "dic_id": 27,
+            "name": "Female",
+            "name_ar": "انثى"
+        },
+        {
+            "dic_id": 28,
+            "name": "Country",
+            "name_ar": "الدولة"
+        },
+        {
+            "dic_id": 29,
+            "name": "Mobile Number",
+            "name_ar": "رقم التليفون"
+        },
+        {
+            "dic_id": 30,
+            "name": "Present Address",
+            "name_ar": "العنوان الحالى"
+        },
+        {
+            "dic_id": 31,
+            "name": "City",
+            "name_ar": "المدينة"
+        },
+        {
+            "dic_id": 32,
+            "name": "State",
+            "name_ar": "المحافظة"
+        },
+        {
+            "dic_id": 33,
+            "name": "Permanent Address",
+            "name_ar": "العنوان المؤقت"
+        },
+        {
+            "dic_id": 34,
+            "name": "Permanent Address",
+            "name_ar": "العنوان المؤقت"
+        },
+        {
+            "dic_id": 35,
+            "name": "Designation",
+            "name_ar": "التعيين"
+        },
+        {
+            "dic_id": 36,
+            "name": "Department",
+            "name_ar": "القسم"
+        },
+        {
+            "dic_id": 37,
+            "name": "Employment Level",
+            "name_ar": "المستوى الوظيفى"
+        },
+        {
+            "dic_id": 38,
+            "name": "Join Date ",
+            "name_ar": "تاريخ الالتحاق"
+        },
+        {
+            "dic_id": 39,
+            "name": "Branch",
+            "name_ar": "الفرع"
+        },
+        {
+            "dic_id": 40,
+            "name": "Attendance Shift",
+            "name_ar": "وردية الحضور"
+        },
+        {
+            "dic_id": 41,
+            "name": "Leave Policy",
+            "name_ar": "سياسة المغادرة"
+        },
+        {
+            "dic_id": 42,
+            "name": "Holiday Lists",
+            "name_ar": "قائمة العطلات"
+        },
+        {
+            "dic_id": 43,
+            "name": "Cancel",
+            "name_ar": "اٍلغاء"
+        },
+        {
+            "dic_id": 44,
+            "name": "General Information",
+            "name_ar": "المعلومات العامة"
+        },
+        {
+            "dic_id": 45,
+            "name": "Personal Information",
+            "name_ar": "المعلومات الشخصية"
+        },
+        {
+            "dic_id": 46,
+            "name": "Job Information",
+            "name_ar": "معلومات العمل"
+        },
+        {
+            "dic_id": 47,
+            "name": "Attendance Information",
+            "name_ar": "معلومات الحضور"
+        },
+        {
+            "dic_id": 48,
+            "name": "Employees List",
+            "name_ar": "قائمة الموظفين"
+        },
+        {
+            "dic_id": 49,
+            "name": "Add Employee",
+            "name_ar": "اٍضافة موظف"
+        },
+        {
+            "dic_id": 50,
+            "name": "English Name",
+            "name_ar": "الاسم بالانجليزية"
+        },
+        {
+            "dic_id": 51,
+            "name": "Role Permissions",
+            "name_ar": "اذونات الدور"
+        },
+        {
+            "dic_id": 52,
+            "name": "Module Name",
+            "name_ar": "اسم الموديول"
+        },
+        {
+            "dic_id": 53,
+            "name": "Page Name",
+            "name_ar": "اسم الصفحة"
+        },
+        {
+            "dic_id": 54,
+            "name": "Search",
+            "name_ar": "بحث"
+        },
+        {
+            "dic_id": 55,
+            "name": "Add Role",
+            "name_ar": "اٍضافة دور"
+        },
+        {
+            "dic_id": 56,
+            "name": "Arabic Name",
+            "name_ar": "الاسم بالعربية"
+        },
+        {
+            "dic_id": 57,
+            "name": "Attendance Permission",
+            "name_ar": "أذونات الحضور"
+        },
+        {
+            "dic_id": 58,
+            "name": "Add Permission",
+            "name_ar": "اضافة اذن"
+        },
+        {
+            "dic_id": 59,
+            "name": "Employee",
+            "name_ar": "الموظف"
+        },
+        {
+            "dic_id": 60,
+            "name": "range",
+            "name_ar": "فترة"
+        },
+        {
+            "dic_id": 61,
+            "name": "single",
+            "name_ar": "فردى"
+        },
+        {
+            "dic_id": 62,
+            "name": "Leave",
+            "name_ar": "مغادرة"
+        },
+        {
+            "dic_id": 63,
+            "name": "Delay",
+            "name_ar": "تأخير"
+        },
+        {
+            "dic_id": 64,
+            "name": "Date of Application",
+            "name_ar": "تاريخ التقديم"
+        },
+        {
+            "dic_id": 65,
+            "name": "Shift Management",
+            "name_ar": "ادارة الورديات"
+        },
+        {
+            "dic_id": 66,
+            "name": "Add Shift",
+            "name_ar": "اضافة وردية"
+        },
+        {
+            "dic_id": 67,
+            "name": "On Duty Time",
+            "name_ar": "بداية وقت العمل"
+        },
+        {
+            "dic_id": 68,
+            "name": "off Duty Time",
+            "name_ar": "نهاية وقت العمل"
+        },
+        {
+            "dic_id": 69,
+            "name": "Beginning In",
+            "name_ar": "يبدأ فى"
+        },
+        {
+            "dic_id": 70,
+            "name": "Ending In",
+            "name_ar": "ينتهى فى"
+        },
+        {
+            "dic_id": 71,
+            "name": "Shift",
+            "name_ar": "وردية"
+        },
+        {
+            "dic_id": 72,
+            "name": "Week Days",
+            "name_ar": "ايام الاسبوع"
+        },
+        {
+            "dic_id": 73,
+            "name": "Assign Multi Shift",
+            "name_ar": "وردية متعددة"
+        },
+        {
+            "dic_id": 74,
+            "name": "Start late time from on duty (in minutes)",
+            "name_ar": "بداية وقت التأخير عن العمل (بالدقيقة)"
+        },
+        {
+            "dic_id": 75,
+            "name": "Settings",
+            "name_ar": "الاعدادات"
+        },
+        {
+            "dic_id": 76,
+            "name": "Attendance Flag",
+            "name_ar": "قواعد الحضور"
+        },
+        {
+            "dic_id": 77,
+            "name": "Machines",
+            "name_ar": "الماكينات"
+        },
+        {
+            "dic_id": 78,
+            "name": "Machines List",
+            "name_ar": "قائمة الماكينات"
+        },
+        {
+            "dic_id": 79,
+            "name": "Add Machine",
+            "name_ar": "اضافة ماكينة"
+        },
+        {
+            "dic_id": 80,
+            "name": "Machine Type",
+            "name_ar": "نوع الماكينة"
+        },
+        {
+            "dic_id": 81,
+            "name": "Leave Policy List",
+            "name_ar": "قائمة سياسة المغادرة"
+        },
+        {
+            "dic_id": 82,
+            "name": "Add Leave Policy",
+            "name_ar": "اضافة سياسة مغادرة"
+        },
+        {
+            "dic_id": 83,
+            "name": "New Washing Ticket",
+            "name_ar": "تذكرة غسيل جديدة"
+        },
+        {
+            "dic_id": 84,
+            "name": "Car Washing Ticket",
+            "name_ar": "تذكرة غسيل سيارة"
+        },
+        {
+            "dic_id": 85,
+            "name": "Carpets Washing Ticket",
+            "name_ar": "تذكرة غسيل سجاد"
+        },
+        {
+            "dic_id": 86,
+            "name": "Sales Report",
+            "name_ar": "تقرير المبيعــات"
+        },
+        {
+            "dic_id": 87,
+            "name": "Cars Report",
+            "name_ar": "تقرير السيارات"
+        },
+        {
+            "dic_id": 88,
+            "name": "Tickets Management",
+            "name_ar": "ادارة التذاكر"
+        },
+        {
+            "dic_id": 89,
+            "name": "Washing machines",
+            "name_ar": "ماكينات الغسيل"
+        },
+        {
+            "dic_id": 90,
+            "name": "Maintenance",
+            "name_ar": "الصيانة"
+        },
+        {
+            "dic_id": 91,
+            "name": "Transaction Datails",
+            "name_ar": "تفاصيل القيد"
+        },
+        {
+            "dic_id": 92,
+            "name": "Transaction Number",
+            "name_ar": "رقم القيد"
+        },
+        {
+            "dic_id": 93,
+            "name": "begining date of the attendance financial year",
+            "name_ar": "تاريخ بداية السنة المالية للحضور"
+        },
+        {
+            "dic_id": 94,
+            "name": "Department Manager",
+            "name_ar": "مدير القسم"
+        },
+        {
+            "dic_id": 95,
+            "name": "Second",
+            "name_ar": "الثانى"
+        },
+        {
+            "dic_id": 96,
+            "name": "Car Status",
+            "name_ar": "حالة السيارة"
+        },
+        {
+            "dic_id": 97,
+            "name": "Select Color",
+            "name_ar": "اختار اللون"
+        },
+        {
+            "dic_id": 98,
+            "name": "Select Brand",
+            "name_ar": "اختار الماركة"
+        },
+        {
+            "dic_id": 99,
+            "name": "Wash",
+            "name_ar": "مغسلة"
+        },
+
+
+
+
+
+
+
+        {
+            "dic_id": 400,
+            "name": "Client Status",
+            "name_ar": "حالة العميل"
+        },
+        {
+            "dic_id": 401,
+            "name": "Good Client",
+            "name_ar": "عميل جيد"
+        },
+        {
+            "dic_id": 402,
+            "name": "Bad Client",
+            "name_ar": "عميل سئ"
+        }
+    ]
+}

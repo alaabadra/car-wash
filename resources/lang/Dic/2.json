@@ -1,0 +1,898 @@
+{
+    "dic": [{
+            "dic_id": 100,
+            "name": "Transactions",
+            "name_ar": "القيود اليومية"
+        },
+        {
+            "dic_id": 101,
+            "name": "Date",
+            "name_ar": "التاريخ"
+        },
+        {
+            "dic_id": 102,
+            "name": "Add New",
+            "name_ar": "إضافة جديد"
+        },
+        {
+            "dic_id": 103,
+            "name": "Type",
+            "name_ar": "النوع"
+        },
+        {
+            "dic_id": 104,
+            "name": "Create",
+            "name_ar": "إنشاء"
+        },
+        {
+            "dic_id": 105,
+            "name": "Update",
+            "name_ar": "تعديل"
+        },
+        {
+            "dic_id": 106,
+            "name": "Delete",
+            "name_ar": "حذف"
+        },
+        {
+            "dic_id": 107,
+            "name": "Show",
+            "name_ar": "عرض"
+        },
+        {
+            "dic_id": 108,
+            "name": "Transaction",
+            "name_ar": "قيد يومى"
+        },
+        {
+            "dic_id": 109,
+            "name": "ID",
+            "name_ar": "الرقم التعريفى"
+        },
+        {
+            "dic_id": 110,
+            "name": "Modify",
+            "name_ar": "تعديل"
+        },
+        {
+            "dic_id": 111,
+            "name": "Currency",
+            "name_ar": "العملة"
+        },
+        {
+            "dic_id": 112,
+            "name": "Number",
+            "name_ar": "الرقم"
+        },
+        {
+            "dic_id": 113,
+            "name": "Description",
+            "name_ar": "الوصف"
+        },
+        {
+            "dic_id": 114,
+            "name": "Close",
+            "name_ar": "إغلاق"
+        },
+        {
+            "dic_id": 115,
+            "name": "Choose",
+            "name_ar": "اختـــر"
+        },
+        {
+            "dic_id": 116,
+            "name": "Account Name",
+            "name_ar": "إسم الحساب"
+        },
+        {
+            "dic_id": 117,
+            "name": "Depit",
+            "name_ar": "الدائن"
+        },
+        {
+            "dic_id": 118,
+            "name": "Credit",
+            "name_ar": "المدين"
+        },
+        {
+            "dic_id": 119,
+            "name": "Add new line",
+            "name_ar": "إضافة سطر جديد"
+        },
+        {
+            "dic_id": 120,
+            "name": "Total",
+            "name_ar": "المجموع"
+        },
+        {
+            "dic_id": 121,
+            "name": "Save",
+            "name_ar": "حفظ"
+        },
+        {
+            "dic_id": 122,
+            "name": "Chart Of Accounts",
+            "name_ar": "دليل الحسابات"
+        },
+        {
+            "dic_id": 123,
+            "name": "Account",
+            "name_ar": "حساب"
+        },
+        {
+            "dic_id": 124,
+            "name": "Parent Account",
+            "name_ar": "الحساب الاصلي"
+        },
+        {
+            "dic_id": 125,
+            "name": "Account Number",
+            "name_ar": "رقم الحساب"
+        },
+        {
+            "dic_id": 126,
+            "name": "Account Name",
+            "name_ar": "إسم الحساب"
+        },
+        {
+            "dic_id": 127,
+            "name": "Account Type",
+            "name_ar": "نوع الحساب"
+        },
+        {
+            "dic_id": 128,
+            "name": "Balance Type",
+            "name_ar": "نوع الرصيد"
+        },
+        {
+            "dic_id": 129,
+            "name": "Final Account",
+            "name_ar": "الحساب النهائى"
+        },
+        {
+            "dic_id": 130,
+            "name": "Main",
+            "name_ar": "رئيسى"
+        },
+        {
+            "dic_id": 131,
+            "name": "Sub",
+            "name_ar": "فرعى"
+        },
+        {
+            "dic_id": 132,
+            "name": "Organizational Structure",
+            "name_ar": "الهيكل التنظيمى"
+        },
+        {
+            "dic_id": 133,
+            "name": "Add",
+            "name_ar": "إضافة"
+        },
+        {
+            "dic_id": 134,
+            "name": "Filters",
+            "name_ar": "التصفيات"
+        },
+        {
+            "dic_id": 135,
+            "name": "All",
+            "name_ar": "الجميع"
+        },
+        {
+            "dic_id": 136,
+            "name": "Abbreviation",
+            "name_ar": "الإختصار"
+        },
+        {
+            "dic_id": 137,
+            "name": "Select Employee",
+            "name_ar": "إختار موظف"
+        },
+        {
+            "dic_id": 138,
+            "name": "Month",
+            "name_ar": "شهر"
+        },
+        {
+            "dic_id": 139,
+            "name": "Day",
+            "name_ar": "يوم"
+        },
+        {
+            "dic_id": 140,
+            "name": "Attendance Logs",
+            "name_ar": "سجلات الحضور"
+        },
+        {
+            "dic_id": 141,
+            "name": "Pull From Machine",
+            "name_ar": "سحب من الماكينه"
+        },
+        {
+            "dic_id": 142,
+            "name": "Take Employees Attendance",
+            "name_ar": "تسجيل حضور الموظفين"
+        },
+        {
+            "dic_id": 143,
+            "name": "Pull Attendance Logs",
+            "name_ar": "سحب سجلات الحضور"
+        },
+        {
+            "dic_id": 144,
+            "name": "Machine",
+            "name_ar": "الماكينة"
+        },
+        {
+            "dic_id": 145,
+            "name": "Select Machine",
+            "name_ar": "إختر ماكينة"
+        },
+        {
+            "dic_id": 146,
+            "name": "Pull",
+            "name_ar": "سحب"
+        },
+        {
+            "dic_id": 147,
+            "name": "Attendance Session",
+            "name_ar": "جلسة الحضور"
+        },
+        {
+            "dic_id": 148,
+            "name": "Sign",
+            "name_ar": "تسجيل"
+        },
+        {
+            "dic_id": 149,
+            "name": "Color",
+            "name_ar": "اللون"
+        },
+        {
+            "dic_id": 150,
+            "name": "Shifts",
+            "name_ar": "الورديات"
+        },
+        {
+            "dic_id": 151,
+            "name": "Attendance Flag List",
+            "name_ar": "قائمة الورديات"
+        },
+        {
+            "dic_id": 152,
+            "name": "Add Attendance Flag",
+            "name_ar": "إضافة قواعد الحضور"
+        },
+        {
+            "dic_id": 153,
+            "name": "Update Attendance Flag",
+            "name_ar": "تعديل قواعد الحضور"
+        },
+        {
+            "dic_id": 154,
+            "name": "Create Attendance Flag",
+            "name_ar": "إنشاء قواعد الحضور"
+        },
+        {
+            "dic_id": 155,
+            "name": "Update Machine",
+            "name_ar": "تعديل الماكينة"
+        },
+        {
+            "dic_id": 156,
+            "name": "Create Machine",
+            "name_ar": "إنشاء الماكينة"
+        },
+        {
+            "dic_id": 157,
+            "name": "Add Machine",
+            "name_ar": "إضافة ماكينة جديدة"
+        },
+        {
+            "dic_id": 158,
+            "name": "Machines List",
+            "name_ar": "قائمة الماكينات"
+        },
+        {
+            "dic_id": 159,
+            "name": "Leave Policies List",
+            "name_ar": "قائمة سياسة الأجازات"
+        },
+        {
+            "dic_id": 160,
+            "name": "Add Leave Policy",
+            "name_ar": "إضافة سياسة الأجازات"
+        },
+        {
+            "dic_id": 161,
+            "name": "Update Leave Policy",
+            "name_ar": "تعديل سياسة الأجازات"
+        },
+        {
+            "dic_id": 162,
+            "name": "Create Leave Policy",
+            "name_ar": "إنشاء سياسة الأجازات"
+        },
+        {
+            "dic_id": 163,
+            "name": "Allocations",
+            "name_ar": "المخصصات"
+        },
+        {
+            "dic_id": 164,
+            "name": "Add Leave Type",
+            "name_ar": "إنشاء نوع الإجازة"
+        },
+        {
+            "dic_id": 165,
+            "name": "Add Leave Policy",
+            "name_ar": "إضافة سياسة أجازة"
+        },
+        {
+            "dic_id": 166,
+            "name": "Leave Policies List",
+            "name_ar": "قائمة سياسة الأجازات"
+        },
+        {
+            "dic_id": 167,
+            "name": "Select Leave Type",
+            "name_ar": "إختـــر إجازة"
+        },
+        {
+            "dic_id": 168,
+            "name": "Leave Type",
+            "name_ar": "نوع الأجازة"
+        },
+        {
+            "dic_id": 169,
+            "name": "Update Leave Type",
+            "name_ar": "تعديل نوع أجازة"
+        },
+        {
+            "dic_id": 170,
+            "name": "Create Leave Type",
+            "name_ar": "إنشاء نوع أجازة"
+        },
+        {
+            "dic_id": 171,
+            "name": "The maximum number of days during the year",
+            "name_ar": "الحد الأقصى للأيام خلال العام"
+        },
+        {
+            "dic_id": 172,
+            "name": "The maximum applicable consecutive days",
+            "name_ar": "الحد الأقصى للأيام المتوالية القابلة للتطبيق"
+        },
+        {
+            "dic_id": 173,
+            "name": "Applicable After",
+            "name_ar": "قابلة للتطبيق بعد"
+        },
+        {
+            "dic_id": 174,
+            "name": "Maximum Days",
+            "name_ar": "الحد الأقصى من الأيام"
+        },
+        {
+            "dic_id": 175,
+            "name": "Leave Types List",
+            "name_ar": "قائمة انواع المغادرات"
+        },
+        {
+            "dic_id": 176,
+            "name": "Update Holiaday",
+            "name_ar": "تعديل عطلة"
+        },
+        {
+            "dic_id": 177,
+            "name": "Add Holiday",
+            "name_ar": "إضافة عطلة"
+        },
+        {
+            "dic_id": 178,
+            "name": "Create Holiaday",
+            "name_ar": "إنشاء عطلة"
+        },
+        {
+            "dic_id": 179,
+            "name": "Start Date",
+            "name_ar": "تاريخ بداية العطلة"
+        },
+        {
+            "dic_id": 180,
+            "name": "Delay In Minutes",
+            "name_ar": "التأخير بالدقائق"
+        },
+        {
+            "dic_id": 181,
+            "name": "End Date",
+            "name_ar": "تاريخ نهاية العطلة"
+        },
+        {
+            "dic_id": 182,
+            "name": "Attendance Sessions",
+            "name_ar": "جلسات الحضور"
+        },
+        {
+            "dic_id": 183,
+            "name": "Add Attendance Session",
+            "name_ar": "إضافة جلسة حضور"
+        },
+        {
+            "dic_id": 184,
+            "name": "Details",
+            "name_ar": "التفاصيل"
+        },
+        {
+            "dic_id": 185,
+            "name": "Session Log",
+            "name_ar": "سجل الجلسة"
+        },
+        {
+            "dic_id": 186,
+            "name": "Activity Log",
+            "name_ar": "سجل النشاطات"
+        },
+        {
+            "dic_id": 187,
+            "name": "Source",
+            "name_ar": "المصدر"
+        },
+        {
+            "dic_id": 188,
+            "name": "Session Number",
+            "name_ar": "رقم الجلسة"
+        },
+        {
+            "dic_id": 189,
+            "name": "Date & Time",
+            "name_ar": "التاربخ و الوقت"
+        },
+        {
+            "dic_id": 190,
+            "name": "Session Time",
+            "name_ar": "وقت الجلسة"
+        },
+        {
+            "dic_id": 191,
+            "name": "Source Type",
+            "name_ar": "نوع المصدر"
+        },
+        {
+            "dic_id": 192,
+            "name": "Sign number",
+            "name_ar": "عدد التسجيلات"
+        },
+        {
+            "dic_id": 193,
+            "name": "Session Logs",
+            "name_ar": "سجلات الحضور"
+        },
+        {
+            "dic_id": 194,
+            "name": "Client Name",
+            "name_ar": "إسم العميــل"
+        },
+        {
+            "dic_id": 195,
+            "name": "Ticket Number",
+            "name_ar": "رقم التذكــرة"
+        },
+        {
+            "dic_id": 196,
+            "name": "Total Materials",
+            "name_ar": "عدد الخامــات"
+        },
+        {
+            "dic_id": 197,
+            "name": "Total Cost",
+            "name_ar": "إجمالى سعر الخامـات"
+        },
+        {
+            "dic_id": 198,
+            "name": "User Name",
+            "name_ar": "إسم المنشــأ"
+        },
+        {
+            "dic_id": 199,
+            "name": "Creation Date",
+            "name_ar": "تاريخ الإنشــاء"
+        },
+        {
+            "dic_id": 200,
+            "name": "Car Wash Ticket",
+            "name_ar": "تذكرة غسيل سيــارة"
+        },
+        {
+            "dic_id": 201,
+            "name": "Carpet Wash Ticket",
+            "name_ar": "تذكرة غسيل سجــاد"
+        },
+        {
+            "dic_id": 202,
+            "name": "Add New Ticket",
+            "name_ar": "إضافة تذكرة جديــدة"
+        },
+        {
+            "dic_id": 203,
+            "name": "Created at",
+            "name_ar": "تاريخ التذكــرة"
+        },
+        {
+            "dic_id": 204,
+            "name": "Wash select",
+            "name_ar": "إختار المغسلــة"
+        },
+        {
+            "dic_id": 205,
+            "name": "Ticket Status",
+            "name_ar": "حالة التذكــرة"
+        },
+        {
+            "dic_id": 206,
+            "name": "select client",
+            "name_ar": "إختار العميــل"
+        },
+        {
+            "dic_id": 207,
+            "name": "Phone Number",
+            "name_ar": "رقم التليفون"
+        },
+        {
+            "dic_id": 208,
+            "name": "Select Size",
+            "name_ar": "إختار المقــاس"
+        },
+        {
+            "dic_id": 209,
+            "name": "Select Type",
+            "name_ar": "إختار النــوع"
+        },
+        {
+            "dic_id": 210,
+            "name": "Entrance Date",
+            "name_ar": "تاريخ الدخــول"
+        },
+        {
+            "dic_id": 211,
+            "name": "Expected Exit Date",
+            "name_ar": "تاريخ الخروج المتوقــع"
+        },
+        {
+            "dic_id": 212,
+            "name": "Print",
+            "name_ar": "طبــاعة"
+        },
+        {
+            "dic_id": 213,
+            "name": "update status",
+            "name_ar": "تحديث الحالـة"
+        },
+        {
+            "dic_id": 214,
+            "name": "Add rate",
+            "name_ar": "إضافة تقييــم"
+        },
+        {
+            "dic_id": 215,
+            "name": "inform",
+            "name_ar": "إبــلاغ"
+        },
+        {
+            "dic_id": 216,
+            "name": "Machine model",
+            "name_ar": "مودل الماكــينة"
+        },
+        {
+            "dic_id": 217,
+            "name": "Brand",
+            "name_ar": "الماركـة"
+        },
+        {
+            "dic_id": 218,
+            "name": "Purchase Date",
+            "name_ar": "تاريخ الشــراء"
+        },
+        {
+            "dic_id": 219,
+            "name": "Store Management",
+            "name_ar": "إدارة المخــازن"
+        },
+        {
+            "dic_id": 220,
+            "name": "Stored Management",
+            "name_ar": "إدارة المخــزون"
+        },
+        {
+            "dic_id": 221,
+            "name": "Products Management",
+            "name_ar": "إدارة المنتجــات"
+        },
+        {
+            "dic_id": 222,
+            "name": "Service Type",
+            "name_ar": "نوع الخدمــة"
+        },
+        {
+            "dic_id": 223,
+            "name": "Classifications",
+            "name_ar": "التصنيفــات"
+        },
+        {
+            "dic_id": 224,
+            "name": "Unit Parts",
+            "name_ar": "أجزاءالوحدات"
+        },
+        {
+            "dic_id": 225,
+            "name": "Unit Price",
+            "name_ar": "سعر الوحدة"
+        },
+        {
+            "dic_id": 226,
+            "name": "Custom Unites",
+            "name_ar": "وحدات مخصصــة"
+        },
+        {
+            "dic_id": 227,
+            "name": "Unites",
+            "name_ar": "الوحـدات"
+        },
+        {
+            "dic_id": 228,
+            "name": "Cost",
+            "name_ar": "التكــلفة"
+        },
+        {
+            "dic_id": 229,
+            "name": "Name",
+            "name_ar": "الإســم"
+        },
+        {
+            "dic_id": 230,
+            "name": "Choices",
+            "name_ar": "خيارات"
+        },
+        {
+            "dic_id": 231,
+            "name": "Material",
+            "name_ar": "خامـة"
+        },
+        {
+            "dic_id": 232,
+            "name": "Service",
+            "name_ar": "خدمـة"
+        },
+        {
+            "dic_id": 233,
+            "name": "Materials",
+            "name_ar": "خامــات"
+        },
+        {
+            "dic_id": 234,
+            "name": "Quantity",
+            "name_ar": "الكمـية"
+        },
+        {
+            "dic_id": 235,
+            "name": "Cars",
+            "name_ar": "سيــارات"
+        },
+        {
+            "dic_id": 236,
+            "name": "Carpets",
+            "name_ar": "سجــاد"
+        },
+        {
+            "dic_id": 237,
+            "name": "Size",
+            "name_ar": "المقــاس"
+        },
+        {
+            "dic_id": 238,
+            "name": "Waiting",
+            "name_ar": "الإنتظــار"
+        },
+        {
+            "dic_id": 239,
+            "name": "Binding",
+            "name_ar": "تحت الإجـراء"
+        },
+        {
+            "dic_id": 240,
+            "name": "Completed",
+            "name_ar": "إكتمـلت"
+        },
+        {
+            "dic_id": 241,
+            "name": "Dileverd/Closed",
+            "name_ar":"وصلـت/إنتـهت"
+        },
+        {
+            "dic_id": 242,
+            "name": "Total Services",
+            "name_ar":"إجمالى الخدمـات"
+        },
+        {
+            "dic_id": 243,
+            "name": "Exit Date",
+            "name_ar":"تاريخ الخـروج"
+        },
+        {
+            "dic_id": 244,
+            "name": "Extra Cost",
+            "name_ar":"تكلفة إضافــية"
+        },
+        {
+            "dic_id": 245,
+            "name": "Total Cost",
+            "name_ar":"إجمالى التكلـفة"
+        },
+        {
+            "dic_id": 246,
+            "name": "Carpet Ticket",
+            "name_ar":"تذكرة المفــروشات"
+        },
+        {
+            "dic_id": 247,
+            "name": "Serial Number",
+            "name_ar":"الرقم التسلسلى"
+        },
+        {
+            "dic_id": 248,
+            "name": "Wash Type",
+            "name_ar":"نوع الغســيل"
+        },
+        {
+            "dic_id": 249,
+            "name": "Car Number",
+            "name_ar":"رقم السيارة"
+        },
+        {
+            "dic_id": 250,
+            "name": "Car Status",
+            "name_ar":"حالة السيارة"
+        },
+        {
+            "dic_id": 251,
+            "name": "Carpet Size",
+            "name_ar":"حجم السجـادة"
+        },
+        {
+            "dic_id": 252,
+            "name": "Car Ticket",
+            "name_ar":"تذكرة السيــارة"
+        },
+        {
+            "dic_id": 253,
+            "name": "Salary",
+            "name_ar":"الراتــب"
+        },
+        {
+            "dic_id": 254,
+            "name": "Receipt Time",
+            "name_ar":"وقت الدخــول"
+        },
+        {
+            "dic_id": 255,
+            "name": "Exit Time",
+            "name_ar":"وقت الخــروج"
+        },
+        {
+            "dic_id": 256,
+            "name": "Taxes Value",
+            "name_ar":"قيمة الضريـبة"
+        },
+        {
+            "dic_id": 257,
+            "name": "Cost Before Taxes",
+            "name_ar":"التكلفة قبل الضريــبة"
+        },
+        {
+            "dic_id": 258,
+            "name": "Search",
+            "name_ar":"بحـــث"
+        },
+        {
+            "dic_id": 259,
+            "name": "Employee Information",
+            "name_ar":"بيانات المــوظف"
+        },
+        {
+            "dic_id": 260,
+            "name": "Shift Details",
+            "name_ar":"تفاصيل الورديــة"
+        },
+        {
+            "dic_id": 261,
+            "name": "Holiday Details",
+            "name_ar":"تفاصيل العطلــة"
+        },
+        {
+            "dic_id": 262,
+            "name": "Leave Details",
+            "name_ar":"تفاصيل المغادرة"
+        },
+        {
+            "dic_id": 263,
+            "name": "The maximum applicable days",
+            "name_ar":"إقصى عدد الايام التى يمكن تطبيقها"
+        },
+        {
+            "dic_id": 264,
+            "name": "Total discount",
+            "name_ar":"إجمالى الخصــم"
+        },
+        {
+            "dic_id": 265,
+            "name": "Create & New",
+            "name_ar":"إنشاء و إضافة جديـد"
+        },
+        {
+            "dic_id": 266,
+            "name": "Rate",
+            "name_ar":"تقــييم"
+        },
+        {
+            "dic_id": 267,
+            "name": "Good Client",
+            "name_ar":"عميل جيــد"
+        },
+        {
+            "dic_id": 268,
+            "name": "Bad Client",
+            "name_ar":"عميل ســىء"
+        },
+        {
+            "dic_id": 269,
+            "name": "Add Inform",
+            "name_ar":"إضافة إبــلاغ"
+        },
+        {
+            "dic_id": 270,
+            "name": "Topic",
+            "name_ar":"عنوان الموضــوع"
+        },
+        {
+            "dic_id": 271,
+            "name": "Message",
+            "name_ar":"الموضــوع"
+        },
+        {
+            "dic_id": 272,
+            "name": "Send",
+            "name_ar":"إرســال"
+        },
+        {
+            "dic_id": 273,
+            "name": "Total Tickets",
+            "name_ar":"عدد التذاكــر"
+        },
+        {
+            "dic_id": 274,
+            "name": "Total Services",
+            "name_ar":"عدد الخدمــات"
+        },
+        {
+            "dic_id": 275,
+            "name": "Total Cost",
+            "name_ar":"إجمالى التكلفـة"
+        },
+        {
+            "dic_id": 276,
+            "name": "Employee Name",
+            "name_ar":"إسم الموظــف"
+        },
+        {
+            "dic_id": 277,
+            "name": "Total Taxes",
+            "name_ar":"إجمالى الضرائـب"
+        },
+        {
+            "dic_id": 278,
+            "name": "End Cost",
+            "name_ar":"التكلفة النهائـية"
+        }
+    ]
+}

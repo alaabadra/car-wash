@@ -1,0 +1,299 @@
+*** route :http://127.0.0.1:8000/api/dictionary ***
+-- in file api : 
+Route::apiResources(['dictionary' => 'API\DictionaryController']);
+-- in file controller:
+public function index(){
+        $lang=session('lang');
+        if ($lang=='ar')
+            $data=Dictionary::select('dic_id','name_ar')->pluck('name_ar','dic_id');
+        else
+            $data=Dictionary::select('dic_id','name')->pluck('name','dic_id');
+        return  $data;
+    }
+*** route : http://127.0.0.1:8000/api/car_washing_get_product_manages
+-- in file api:
+Route::get('car_washing_get_product_manages','API\Washing_ticket\Car_washingController@get_product_manages');
+-- in contoller:
+    public function get_product_manages(){
+        return Product_manage::where('classifications',1)->get();
+    }
+**http://127.0.0.1:8000/api/car_washing/-1/xx/xx?page=1
+
+
+** route: http://127.0.0.1:8000/api/get_clients
+
+-- file api:
+Route::get('get_clients','API\Washing_ticket\Car_washingController@get_clients');
+
+--contoller:
+    public function get_clients(){
+        return Client::all();
+    }
+** route: http://127.0.0.1:8000/api/car_washing/2
+-- file api:
+Route::apiResources(['car_washing' => 'API\Washing_ticket\Car_washingController']);
+-- contoller:
+    public function show_ticket($id){
+        $cars=DB::table('car_washings')
+        ->leftJoin('clients','clients.id','car_washings.client_id')
+        ->leftJoin('cars','cars.id','car_washings.car_id')
+        ->leftJoin('code_tables as codes', function ($join) {
+                $join->on('cars.brand', '=', 'codes.sys_code');
+                $join->on('codes.sys_code_type', '=', DB::raw('2'));
+            })
+        ->leftJoin('code_tables as colors', function ($join) {
+                $join->on('cars.color', '=', 'colors.sys_code');
+                $join->on('colors.sys_code_type', '=', DB::raw('1'));
+            })
+        ->leftJoin('code_tables as statas', function ($join) {
+                $join->on('cars.color', '=', 'colors.sys_code');
+                $join->on('statas.sys_code_type', '=', DB::raw('3'));
+            })
+        ->select('car_washings.*','car_washings.id as id' ,'clients.*','clients.name as client',
+        'codes.name as brand','cars.car_number as car_number','cars.car_letters as car_letters',
+        'colors.name as color','statas.name as status')
+        ->where('car_washings.id',$id)
+        ->get();
+        // dd($cars);
+        return $cars;
+    }
+
+** route: http://127.0.0.1:8000/api/get_total_tickets
+-- api: 
+Route::get('get_total_tickets','API\Washing_ticket\Car_washingController@get_total_tickets');
+-- contoller:
+    public function get_total_tickets(){
+        $tickets=Car_washing::count('id');
+        return $tickets;
+    }
+
+** route: http://127.0.0.1:8000/api/car_washing_get_total_servs
+-- api: 
+
+Route::get('car_washing_get_total_servs','API\Washing_ticket\Car_washingController@car_washing_get_total_servs');
+
+--contoller:
+    public function car_washing_get_total_servs(){
+        return Car_washing::sum('num_of_materials');
+    }
+
+** http://127.0.0.1:8000/api/car_washing_get_total_cost
+--api 
+Route::get('car_washing_get_total_cost','API\Washing_ticket\Car_washingController@car_washing_get_total_cost');
+
+--contoller:
+    public function car_washing_get_total_cost(){
+        return Car_washing::sum('total_price');
+    }
+----------------------------------------
+** route : http://127.0.0.1:8000/api/get_serial
+-- api:
+Route::get('get_serial','API\Washing_ticket\Car_washingController@get_serial');
+-- contoller:
+    public function get_serial(){
+        $serial=Car_washing::max('id')+1;
+        $ser=0;
+        if($serial<=9)
+            $ser=' 000'.$serial;
+        else if($serial<=99)
+            $ser=' 00'.$serial;
+        else if($serial<=999)
+            $ser=' 0'.$serial;
+        else
+            $ser=' '.$serial;
+        $serial=date('Y').' 0110'.$ser;
+        return $serial;
+    }
+** route: http://127.0.0.1:8000/api/car_washing_get_id
+-- api: 
+Route::get('car_washing_get_id','API\Washing_ticket\Car_washingController@get_id');
+--contoller:
+    public function get_id(){
+        return Car_washing::max('id')+1;
+    }
+**route : http://127.0.0.1:8000/api/get_client/1
+-- api : Route::get('get_client/{id}','API\Washing_ticket\Car_washingController@get_client');
+-- contoller: 
+    public function get_client($id){
+        return Client::find($id);
+    }
+** route: http://127.0.0.1:8000/api/car_washing_get_units/1
+-- api: 
+Route::get('car_washing_get_units/{unit_id}','API\Washing_ticket\Car_washingController@get_units');
+-- contoller:
+    public function get_units($product_id){
+        return Custom_unit::where('product_id',$product_id)->get();
+    }
+** route: http://127.0.0.1:8000/api/car_washing_get_cost/1
+-- api:
+Route::get('car_washing_get_cost/{unit_id}','API\Washing_ticket\Car_washingController@get_cost');
+-- contoller:
+    public function get_cost($unit_id){
+        $unit=Custom_unit::where('id',$unit_id)->first();
+        return $unit->cost;
+    }
+**route: http://127.0.0.1:8000/api/car_washing_get_total_cost/6
+-- api:
+Route::get('car_washing_get_total_cost/{ticket_id}','API\Washing_ticket\Car_washingController@get_total_cost');
+-- contoller:
+    public function get_total_cost($ticket_id){
+        return Service::where(['ticket_id'=>$ticket_id,'type'=>1])->sum('cost')+Service::where(['ticket_id'=>$ticket_id,'type'=>1])->sum('extra_cost');
+    }
+** route: http://127.0.0.1:8000/api/car_washing_get_total_services/6
+-- api: 
+Route::get('car_washing_get_total_services/{ticket_id}','API\Washing_ticket\Car_washingController@get_total_services');
+--contoller:
+    public function get_total_services($ticket_id){
+        return Service::where(['ticket_id'=>$ticket_id,'type'=>1])->count();
+    }
+
+** route: http://127.0.0.1:8000/api/carpet_material
+--api: 
+Route::apiResources(['carpet_material' => 'API\Washing_ticket\Carpets_materialController']);
+-- contoller:
+  public function store(Request $request){
+        $data=new Service;
+        $data->ticket_id=$request->ticket_id;
+        $data->product_id=$request->product_id;
+        $data->unit_id=$request->unit_id;
+        $data->cost=$request->cost;
+        $data->extra_cost=$request->extra_cost;
+        $data->description=$request->description;
+        $data->type=$request->type;
+        $data->save();
+        return response(['success','your data created successfully'],200);
+    }
+**route: http://127.0.0.1:8000/api/car_washing_get_total_discount/6
+
+-- api: Route::get('car_washing_get_total_discount/{ticket_id}','API\Washing_ticket\Car_washingController@get_total_discount');
+-- contoller:
+    public function get_total_discount($ticket_id){
+        return Service::where(['ticket_id'=>$ticket_id,'type'=>1])->where('extra_cost','<','0')->sum('extra_cost')*-1;
+    }
+** route:
+http://127.0.0.1:8000/api/carpet_material/6/1?page=1
+
+-- api:  Route::get('carpet_material/{id}/{type}','API\Washing_ticket\Carpets_materialController@show'); 
+contoller:
+    public function show($id,$type){
+        $data=DB::table('services')
+        ->join('custom_units','services.unit_id','custom_units.id')
+        ->join('products_manages','services.product_id','products_manages.id')
+        ->select('services.id as id','services.extra_cost as extra_cost','services.description as descr','custom_units.name as units','products_manages.name as name','products_manages.name_ar',
+                 'custom_units.cost')
+        ->where(['ticket_id'=>$id,'services.type'=>$type])
+        ->paginate(5);
+        return $data;
+    }
+view:
+{id: 39, extra_cost: 10, descr: "jjk", units: "front", name: "wash", name_ar: "غسيل", cost: 20}
+
+** route: http://127.0.0.1:8000/api/car_washing_get_car/10/20
+--api: Route::get('car_washing_get_car/{number}/{letters}','API\Washing_ticket\Car_washingController@check_car_number');
+--contoller: 
+    public function check_car_number($number,$letters){
+        if(strlen($letters)!=3)
+            return 'letter_error';
+        if(strlen($number)>4){
+            return 'num_error';
+        }
+        $car=Car::where(['car_number'=>$number,'car_letters'=>$letters])->first();
+        return $car??'';
+    }
+** route: http://127.0.0.1:8000/api/car_washing
+-- api: 
+Route::apiResources(['car_washing' => 'API\Washing_ticket\Car_washingController']);
+-- contoller:
+    public function store(Request $request){
+        $check_car=Car::where(['car_number'=>$request->car_number_num_ar,'car_letters'=>$request->car_number_letters_ar])->first();
+        $car_id=0;
+        if(!$check_car){
+            $car=new Car;
+            $car->car_number=$request->car_number_num_ar;
+            $car->car_letters=$request->car_number_letters_ar;
+            $car->brand=$request->brand;
+            $car->color=$request->color;
+            $car->status=$request->car_status;
+            $car->client_id=$request->client;
+            $car->save();
+            $car_id=$car->id;
+        }else{
+            Car::where(['car_number'=>$request->car_number_num_ar,'car_letters'=>$request->car_number_letters_ar])->update([
+                'brand'=>$request->brand,
+                'color'=>$request->color,
+                'status'=>$request->car_status,
+                'client_id'=>$request->client,
+            ]);
+            $car_id=$check_car->id;
+        }
+
+        $car_wash=new Car_washing;
+        $car_wash->serial_number=$request->serial_number;
+        $car_wash->ticket_date=$request->ticket_date;
+        $car_wash->wash=$request->wash;
+        $car_wash->ticket_status=$request->ticket_status;
+        $car_wash->car_id=$car_id;
+        $car_wash->client_id=$request->client;
+        $car_wash->total_discount=$request->total_discount;
+        $car_wash->receipt_time=$request->receipt_time;
+        $car_wash->exit_time=$request->exit_time;
+        $car_wash->num_of_materials=$request->total_services;
+        $car_wash->total_price=$request->total_cost;
+        if($request->ticket_status==2)
+            $car_wash->pended=1;
+        if($request->ticket_status==3){
+            $car_wash->pended=1;
+            $car_wash->completed=1;
+        }
+        $car_wash->save();
+        return response(['success','your data created successfully'],200);
+    }
+
+//////////////////////for carpet////////////////
+
+** route: http://127.0.0.1:8000/api/car_washing/2
+-- file api:
+Route::apiResources(['car_washing' => 'API\Washing_ticket\Car_washingController']);
+-- contoller:
+    public function show_ticket($id){
+        $cars=DB::table('car_washings')
+        ->leftJoin('clients','clients.id','car_washings.client_id')
+        ->leftJoin('cars','cars.id','car_washings.car_id')
+        ->leftJoin('code_tables as codes', function ($join) {
+                $join->on('cars.brand', '=', 'codes.sys_code');
+                $join->on('codes.sys_code_type', '=', DB::raw('2'));
+            })
+        ->leftJoin('code_tables as colors', function ($join) {
+                $join->on('cars.color', '=', 'colors.sys_code');
+                $join->on('colors.sys_code_type', '=', DB::raw('1'));
+            })
+        ->leftJoin('code_tables as statas', function ($join) {
+                $join->on('cars.color', '=', 'colors.sys_code');
+                $join->on('statas.sys_code_type', '=', DB::raw('3'));
+            })
+        ->select('car_washings.*','car_washings.id as id' ,'clients.*','clients.name as client',
+        'codes.name as brand','cars.car_number as car_number','cars.car_letters as car_letters',
+        'colors.name as color','statas.name as status')
+        ->where('car_washings.id',$id)
+        ->get();
+        // dd($cars);
+        return $cars;
+    }
+
+**route:http://127.0.0.1:8000/api/carpet_washing_get_product_manages
+-- api: 
+Route::get('carpet_washing_get_product_manages','API\Washing_ticket\Carpets_washingController@get_product_manages');
+--contoller:
+    public function get_product_manages(){
+        return Product_manage::where('classifications',2)->get();
+    }
+
+**route: http://127.0.0.1:8000/api/carpet_washing_get_total_cost
+-- api: 
+Route::get('carpet_washing_get_total_cost','API\Washing_ticket\Carpets_washingController@carpet_washing_get_total_cost');
+-- contoller:
+    public function carpet_washing_get_total_cost(){
+        return Carpet_washing::sum('total_price');
+    }
+
+** route:  
