@@ -1,0 +1,87 @@
+{
+    "_operation_type": "1create  2update  3delete 4search",
+
+    "screen": [{
+            "screen_route": "jornals",
+            "module_id": "1",
+            "module_name": "Finance",
+            "screen_name": "Jornals",
+            "operation_type": "2",
+            "sort": 1
+        },
+        {
+            "screen_route": "chart_of_account",
+            "module_id": "1",
+            "module_name": "Finance",
+            "screen_name": "Chart of Accounts",
+            "operation_type": "2",
+            "sort": 2
+        },
+
+
+
+
+
+        {
+            "screen_route": "manage_emp",
+            "module_id": "2",
+            "module_name": "Employees",
+            "screen_name": "Employees Management",
+            "operation_type": "1,2,3",
+            "sort": 1
+        },
+        {
+            "screen_route": "permission",
+            "module_id": "2",
+            "module_name": "Employees",
+            "screen_name": "Role Permissionس",
+            "operation_type": "1",
+            "sort": 2
+        },
+        {
+            "screen_route": "organizational_structure",
+            "module_id": "2",
+            "module_name": "Employees",
+            "screen_name": "Organizational Structure",
+            "operation_type": "1,2,3,4",
+            "sort": 3
+        },
+        {
+            "screen_route": "attendance_logs",
+            "module_id": "2",
+            "module_name": "Employees",
+            "screen_name": "Attendance Logs",
+            "operation_type": "1,2,3",
+            "sort": 4
+        },
+        {
+            "screen_route": "shift_management",
+            "module_id": "2",
+            "module_name": "Employees",
+            "screen_name": "Shift Management",
+            "operation_type": "1,2,3",
+            "sort": 5
+        },
+        {
+            "screen_route": "settings",
+            "module_id": "2",
+            "module_name": "Employees",
+            "screen_name": "Settings",
+            "operation_type": "1,2,3",
+            "sort": 6
+        },
+
+
+
+
+
+        {
+            "screen_route": "car_washing",
+            "module_id": "3",
+            "module_name": "New Washing Ticket",
+            "screen_name": "car_washing",
+            "operation_type": "1,2,3",
+            "sort": 1
+        }
+    ]
+}
